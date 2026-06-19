@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>婚活 すり合わせ</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="container">
+
+<div class="form-header">
+<h1>婚活 すり合わせ</h1>
+<p class="form-description">価値観すり合わせ用アンケート</p>
+</div>
+
+<!-- このファイルはPart3と同じ構造で利用できるように -->
+<!-- id / name を全問に付与 -->
+
+<label>Q1 結婚したい理由は何ですか？</label>
+<textarea id="q1" class="detail-textarea"></textarea>
+
+<label>Q2 どんな夫婦になりたいですか？理想の夫婦像を教えてください。</label>
+<textarea id="q2" class="detail-textarea"></textarea>
+
+<label>Q3 前科はありますか？</label>
+<label><input type="radio" name="q3" value="ある">ある</label>
+<label><input type="radio" name="q3" value="ない">ない</label>
+
+<label>Q4 借金はありますか？</label>
+<label><input type="radio" name="q4" value="ない">ない</label>
+<textarea id="q4_other" class="detail-textarea" placeholder="その他:"></textarea>
+
+<label>Q5 障害、難病など健康上のことで伝えておくことはありますか？</label>
+<label><input type="radio" name="q5" value="ない">ない</label>
+<textarea id="q5_other" class="detail-textarea" placeholder="その他:"></textarea>
+
+<label>Q6 宗教事情で事前に伝えておくことはありますか？</label>
+<label><input type="radio" name="q6" value="ない">ない(法事程度であればこちらを選択してください)</label>
+<textarea id="q6_other" class="detail-textarea" placeholder="その他:"></textarea>
+
+<label>Q7 再婚の場合、離婚理由を教えてください。</label>
+<label><input type="radio" name="q7" value="初婚">初婚</label>
+<textarea id="q7_other" class="detail-textarea" placeholder="その他:"></textarea>
+
+<label>Q8 転勤や転職の予定はありますか？</label>
+<label><input type="radio" name="q8" value="ある">ある</label>
+<label><input type="radio" name="q8" value="ない">ない</label>
+
+<label>Q9 子どもはほしいですか？</label>
+<p>1人目〜4人目以上はそれぞれラジオボタンで選択</p>
+
+<label>Q10 1年以内にブライダルチェックは受けたことがありますか？</label>
+<label><input type="radio" name="q10" value="ある">ある</label>
+<label><input type="radio" name="q10" value="ない">ない</label>
+
+<label>Q11 結婚後の働き方はどうしたいですか？</label>
+<label><input type="radio" name="q11" value="2人ともフルタイム">2人ともフルタイム</label>
+<label><input type="radio" name="q11" value="自分はフルタイムで働くが相手の働き方は問わない">自分はフルタイムで働くが相手の働き方は問わない</label>
+<label><input type="radio" name="q11" value="自分はフルタイムで働くので相手にはセーブしてほしい">自分はフルタイムで働くので相手にはセーブしてほしい</label>
+<label><input type="radio" name="q11" value="パートで働きたい">パートで働きたい</label>
+<label><input type="radio" name="q11" value="専業主婦,專業主夫になりたい">専業主婦,專業主夫になりたい</label>
+<textarea id="q11_other" class="detail-textarea" placeholder="その他:"></textarea>
+
+<label>Q12 家事はどう分担したいですか？</label>
+<label><input type="radio" name="q12">全て積極的にやりたい</label>
+<label><input type="radio" name="q12">分担したいが好きな家事・得意な家事は積極的にやりたい</label>
+<label><input type="radio" name="q12">分担したいが帰る時間が自分の方が早ければ平日は積極的にやりたい</label>
+<label><input type="radio" name="q12">半々にしたい</label>
+<label><input type="radio" name="q12">平日はほとんどお願いしたいが休日は積極的に行いたい</label>
+<label><input type="radio" name="q12">ほとんど相手にやってほしい</label>
+
+<label>Q13 結婚後の支出割合はどうしたいですか？</label>
+<label><input type="radio" name="q13">共通でかかるお金は自分がほとんど払いたい</label>
+<label><input type="radio" name="q13">収入差による按分で出し合いたい</label>
+<label><input type="radio" name="q13">半々で出し合いたい</label>
+<label><input type="radio" name="q13">共通でかかるお金は相手にほとんど払ってほしい</label>
+<textarea id="q13_other" class="detail-textarea"></textarea>
+
+<label>Q14 子どもが生まれた後の働き方はどうしたいですか？</label>
+<textarea id="q14" class="detail-textarea"></textarea>
+
+<label>Q15 育児はどう分担したいですか？</label>
+<textarea id="q15" class="detail-textarea"></textarea>
+
+<label>Q16 育休は何ヶ月ぐらい取りたいですか？</label>
+<textarea id="q16" class="detail-textarea"></textarea>
+
+<label>Q17 子どもが生まれた後の支出割合はどうしたいですか？</label>
+<textarea id="q17" class="detail-textarea"></textarea>
+
+<label>Q18 次の家事の中で好きな順に選択してください。</label>
+<div id="q18Ranking" class="ranking-group">
+<button type="button" class="rank-option">料理</button>
+<button type="button" class="rank-option">洗い物</button>
+<button type="button" class="rank-option">掃除機をかける</button>
+<button type="button" class="rank-option">水回りの掃除</button>
+<button type="button" class="rank-option">片付け</button>
+<button type="button" class="rank-option">洗濯機をまわしてから干すまで</button>
+<button type="button" class="rank-option">干したものの取り込み</button>
+<button type="button" class="rank-option">ゴミ捨て</button>
+</div>
+
+<label>Q19 便利家電や惣菜へのこだわりはありますか？</label>
+<textarea id="q19" class="detail-textarea"></textarea>
+
+<label>Q20 家は買いたいですか？許容範囲のもの全て選んでください。</label>
+<label><input type="checkbox" name="q20">ずっと賃貸</label>
+<label><input type="checkbox" name="q20">将来的には持ち家を買いたい</label>
+<label><input type="checkbox" name="q20">すでに持ち家を持っている</label>
+<label><input type="checkbox" name="q20">今は賃貸だが将来や相続後は実家に住みたい</label>
+<label><input type="checkbox" name="q20">社宅などその他</label>
+<label><input type="checkbox" name="q20">相手の希望によるので何とも言えない</label>
+
+<label>Q21 戸建て、マンションについて、どれが良いですか？許容範囲のもの全て選んでください。</label>
+<label><input type="checkbox" name="q21">注文住宅で戸建て</label>
+<label><input type="checkbox" name="q21">中古の戸建て</label>
+<label><input type="checkbox" name="q21">新築マンション</label>
+<label><input type="checkbox" name="q21">中古マンション</label>
+
+<label>Q22 家について、予算と住みたいエリアにこだわりがあれば教えてください。</label>
+<textarea id="q22_budget" class="detail-textarea" placeholder="予算"></textarea>
+<textarea id="q22_area" class="detail-textarea" placeholder="エリア"></textarea>
+
+<label>Q23 車は買いたいですか？</label>
+<textarea id="q23" class="detail-textarea"></textarea>
+
+<label>Q24 ペットは飼いたいですか？ 飼いたい場合は何の生き物を飼いたいか教えてください。</label>
+<label><input type="radio" name="q24">飼いたくない</label>
+<textarea id="q24_pet" class="detail-textarea"></textarea>
+
+<label>Q25〜Q31</label>
+<p>ユーザー指定文面のラジオボタン実装領域（name=q25〜q31）</p>
+
+<button id="submitBtn" type="button">送信</button>
+
+</div>
+</body>
+</html>
