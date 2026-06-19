@@ -171,6 +171,24 @@ label:has(input[type="checkbox"]){
 }
 
 /********************************
+ * スライダー
+ ********************************/
+
+.slider-labels{
+  display:flex;
+  justify-content:space-between;
+  margin-top:8px;
+  margin-bottom:8px;
+  color:#d96c7d;
+  font-weight:600;
+}
+
+input[type="range"]{
+  width:100%;
+  accent-color:#f48ca0;
+}
+
+/********************************
  * ボタン
  ********************************/
 
