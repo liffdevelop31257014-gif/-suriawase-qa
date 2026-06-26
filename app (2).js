@@ -2,7 +2,7 @@
    婚活 すり合わせ – app.js
    ============================================================ */
 
-const LIFF_ID   = "YOUR_LIFF_ID"; /* ← LIFFコンソールで発行したIDに差し替えてください */
+const LIFF_ID   = "2010312230-vq3MADk8"; /* ← LIFFコンソールで発行したIDに差し替えてください */
 const DRAFT_KEY = "konkatsu_suriawase_draft_v1";
 
 /* 送信＆共有完了後にトーク画面へ送信するメッセージ */
