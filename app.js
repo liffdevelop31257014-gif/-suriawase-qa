@@ -393,7 +393,7 @@ const SHARE_KEY_MAP = {
   q30_budget:"G", q30_area:"H",
   q31:"I", q32:"J", q32_pet:"J2",
   q33:"K", q34:"L", q35:"M", q36:"N", q37:"O", q38:"P", q39:"Q",
-  _shareName:"zz",
+  _shareName:"ZZ",
 };
 const SHARE_KEY_MAP_REVERSE = Object.fromEntries(
   Object.entries(SHARE_KEY_MAP).map(([k, v]) => [v, k])
